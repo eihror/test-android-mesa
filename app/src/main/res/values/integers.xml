@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="animation_duration_fast">100</integer>
+    <integer name="animation_duration_default">250</integer>
+    <integer name="animation_duration_material_end">300</integer>
+</resources>

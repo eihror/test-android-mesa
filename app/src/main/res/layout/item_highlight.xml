@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/toolkit_dimen320"
+    android:layout_height="@dimen/toolkit_dimen128">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_highlight"
+        android:layout_width="@dimen/toolkit_dimen128"
+        android:layout_height="@dimen/toolkit_dimen128"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_highlight_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/toolkit_dimen16"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:textAppearance="@style/Text.Bold.16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view_highlight"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/lorem/random" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox_highlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/toolkit_dimen16"
+        android:background="@drawable/checkbox_favorite"
+        android:button="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_view_highlight"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_highlight_title"
+        app:layout_constraintVertical_bias="1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_highlight_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/toolkit_dimen8"
+        android:textAppearance="@style/Text.Italic.14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_highlight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_highlight"
+        app:layout_constraintTop_toTopOf="@+id/checkbox_highlight"
+        tools:text="16 horas atrás" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

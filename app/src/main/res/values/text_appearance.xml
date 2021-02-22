@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <style name="Text" />
+
+    <style name="Text.Black">
+        <item name="android:fontFamily">@font/roboto_black</item>
+    </style>
+
+    <style name="Text.Medium">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="Text.Regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="Text.Italic">
+        <item name="android:fontFamily">@font/roboto_italic</item>
+    </style>
+
+    <style name="Text.Bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="Text.Black.28sp">
+        <item name="android:textSize">@dimen/toolkit_textSize28</item>
+    </style>
+
+    <style name="Text.Black.26sp">
+        <item name="android:textSize">@dimen/toolkit_textSize26</item>
+    </style>
+
+    <style name="Text.Black.24sp">
+        <item name="android:textSize">@dimen/toolkit_textSize24</item>
+    </style>
+
+    <style name="Text.Black.22sp">
+        <item name="android:textSize">@dimen/toolkit_textSize22</item>
+    </style>
+
+    <style name="Text.Black.20sp">
+        <item name="android:textSize">@dimen/toolkit_textSize20</item>
+    </style>
+
+    <style name="Text.Black.18sp">
+        <item name="android:textSize">@dimen/toolkit_textSize18</item>
+    </style>
+
+    <style name="Text.Black.16sp">
+        <item name="android:textSize">@dimen/toolkit_textSize16</item>
+    </style>
+
+    <style name="Text.Black.14sp">
+        <item name="android:textSize">@dimen/toolkit_textSize14</item>
+    </style>
+
+    <style name="Text.Black.12sp">
+        <item name="android:textSize">@dimen/toolkit_textSize12</item>
+    </style>
+
+    <style name="Text.Medium.26sp">
+        <item name="android:textSize">@dimen/toolkit_textSize26</item>
+    </style>
+
+    <style name="Text.Medium.24sp">
+        <item name="android:textSize">@dimen/toolkit_textSize24</item>
+    </style>
+
+    <style name="Text.Medium.22sp">
+        <item name="android:textSize">@dimen/toolkit_textSize22</item>
+    </style>
+
+    <style name="Text.Medium.20sp">
+        <item name="android:textSize">@dimen/toolkit_textSize20</item>
+    </style>
+
+    <style name="Text.Medium.18sp">
+        <item name="android:textSize">@dimen/toolkit_textSize18</item>
+    </style>
+
+    <style name="Text.Medium.16sp">
+        <item name="android:textSize">@dimen/toolkit_textSize16</item>
+    </style>
+
+    <style name="Text.Medium.14sp">
+        <item name="android:textSize">@dimen/toolkit_textSize14</item>
+    </style>
+
+    <style name="Text.Medium.12sp">
+        <item name="android:textSize">@dimen/toolkit_textSize12</item>
+    </style>
+
+    <style name="Text.Regular.26sp">
+        <item name="android:textSize">@dimen/toolkit_textSize26</item>
+    </style>
+
+    <style name="Text.Regular.24sp">
+        <item name="android:textSize">@dimen/toolkit_textSize24</item>
+    </style>
+
+    <style name="Text.Regular.22sp">
+        <item name="android:textSize">@dimen/toolkit_textSize22</item>
+    </style>
+
+    <style name="Text.Regular.20sp">
+        <item name="android:textSize">@dimen/toolkit_textSize20</item>
+    </style>
+
+    <style name="Text.Regular.18sp">
+        <item name="android:textSize">@dimen/toolkit_textSize18</item>
+    </style>
+
+    <style name="Text.Regular.16sp">
+        <item name="android:textSize">@dimen/toolkit_textSize16</item>
+    </style>
+
+    <style name="Text.Regular.14sp">
+        <item name="android:textSize">@dimen/toolkit_textSize14</item>
+    </style>
+
+    <style name="Text.Regular.12sp">
+        <item name="android:textSize">@dimen/toolkit_textSize12</item>
+    </style>
+
+    <style name="Text.Italic.26sp">
+        <item name="android:textSize">@dimen/toolkit_textSize26</item>
+    </style>
+
+    <style name="Text.Italic.24sp">
+        <item name="android:textSize">@dimen/toolkit_textSize24</item>
+    </style>
+
+    <style name="Text.Italic.22sp">
+        <item name="android:textSize">@dimen/toolkit_textSize22</item>
+    </style>
+
+    <style name="Text.Italic.20sp">
+        <item name="android:textSize">@dimen/toolkit_textSize20</item>
+    </style>
+
+    <style name="Text.Italic.18sp">
+        <item name="android:textSize">@dimen/toolkit_textSize18</item>
+    </style>
+
+    <style name="Text.Italic.16sp">
+        <item name="android:textSize">@dimen/toolkit_textSize16</item>
+    </style>
+
+    <style name="Text.Italic.14sp">
+        <item name="android:textSize">@dimen/toolkit_textSize14</item>
+    </style>
+
+    <style name="Text.Italic.12sp">
+        <item name="android:textSize">@dimen/toolkit_textSize12</item>
+    </style>
+
+    <style name="Text.Bold.26sp">
+        <item name="android:textSize">@dimen/toolkit_textSize26</item>
+    </style>
+
+    <style name="Text.Bold.24sp">
+        <item name="android:textSize">@dimen/toolkit_textSize24</item>
+    </style>
+
+    <style name="Text.Bold.22sp">
+        <item name="android:textSize">@dimen/toolkit_textSize22</item>
+    </style>
+
+    <style name="Text.Bold.20sp">
+        <item name="android:textSize">@dimen/toolkit_textSize20</item>
+    </style>
+
+    <style name="Text.Bold.18sp">
+        <item name="android:textSize">@dimen/toolkit_textSize18</item>
+    </style>
+
+    <style name="Text.Bold.16sp">
+        <item name="android:textSize">@dimen/toolkit_textSize16</item>
+    </style>
+
+    <style name="Text.Bold.14sp">
+        <item name="android:textSize">@dimen/toolkit_textSize14</item>
+    </style>
+
+    <style name="Text.Bold.12sp">
+        <item name="android:textSize">@dimen/toolkit_textSize12</item>
+    </style>
+
+</resources>

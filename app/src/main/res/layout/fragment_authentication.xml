@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".presentation.auth.AuthenticationFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_news"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/img_logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/toolkit_dimen20"
+        android:letterSpacing="1"
+        android:text="News"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Text.Black.20sp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/toolkit_textSize20"
+        app:layout_constraintBottom_toTopOf="@+id/button_facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_facebook"
+        style="@style/Button.Fill.White"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/toolkit_dimen16"
+        android:layout_marginEnd="@dimen/toolkit_dimen16"
+        android:layout_marginBottom="@dimen/toolkit_dimen16"
+        android:text="Entrar com facebook"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/button_sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sign_in"
+        style="@style/Button.Outline.White"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/toolkit_dimen16"
+        android:layout_marginEnd="@dimen/toolkit_dimen16"
+        android:layout_marginBottom="@dimen/toolkit_dimen40"
+        android:text="Entrar com e-mail"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/toolkit_dimen32"
+        android:text="Não tenho conta. Cadastrar"
+        android:textAppearance="@style/Text.Medium.14sp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/toolkit_textSize14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

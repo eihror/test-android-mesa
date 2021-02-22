@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".presentation.auth.SignInFragment">
+
+    <com.eihror.mesatestigor.presentation.widget.Toolbar
+        android:id="@+id/toolbar_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/toolkit_dimen40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_login" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_sign_in"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/button_facebook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_login">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/toolkit_dimen56" />
+
+            <com.eihror.mesatestigor.presentation.widget.CustomInputText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/toolkit_dimen16"
+                android:layout_marginEnd="@dimen/toolkit_dimen16" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/toolkit_dimen26" />
+
+            <com.eihror.mesatestigor.presentation.widget.CustomInputText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/toolkit_dimen16"
+                android:layout_marginEnd="@dimen/toolkit_dimen16" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/toolkit_dimen32" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_login"
+                style="@style/Button.Fill.ColorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/toolkit_dimen16"
+                android:layout_marginEnd="@dimen/toolkit_dimen16"
+                android:text="Login"
+                android:textColor="@color/white" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_facebook"
+            style="@style/Button.Outline.ColorPrimaryDark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/toolkit_dimen16"
+            android:layout_marginEnd="@dimen/toolkit_dimen16"
+            android:layout_marginBottom="@dimen/toolkit_dimen40"
+            android:text="Entrar com o facebook"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toTopOf="@+id/text_view_sign_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/toolkit_dimen32"
+            android:text="Não tenho conta. Cadastrar"
+            android:textAppearance="@style/Text.Medium.14sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/toolkit_textSize14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

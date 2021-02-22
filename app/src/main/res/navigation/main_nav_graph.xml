@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="com.eihror.mesatestigor.presentation.auth.AuthenticationFragment"
+        android:label="fragment_authentication"
+        tools:layout="@layout/fragment_authentication">
+        <action
+            android:id="@+id/action_authenticationFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/toolkit_slide_in_down"
+            app:exitAnim="@anim/toolkit_slide_out_down"
+            app:popEnterAnim="@anim/toolkit_slide_pop_out_down"
+            app:popExitAnim="@anim/toolkit_slide_pop_in_down" />
+        <action
+            android:id="@+id/action_authenticationFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/toolkit_slide_in_down"
+            app:exitAnim="@anim/toolkit_slide_out_down"
+            app:popEnterAnim="@anim/toolkit_slide_pop_out_down"
+            app:popExitAnim="@anim/toolkit_slide_pop_in_down" />
+        <action
+            android:id="@+id/action_authenticationFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/toolkit_slide_in"
+            app:exitAnim="@anim/toolkit_slide_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/toolkit_slide_pop_out"
+            app:popExitAnim="@anim/toolkit_slide_pop_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.eihror.mesatestigor.presentation.auth.SignInFragment"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin">
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/toolkit_slide_in_down"
+            app:exitAnim="@anim/toolkit_slide_out_down"
+            app:popEnterAnim="@anim/toolkit_slide_pop_out_down"
+            app:popExitAnim="@anim/toolkit_slide_pop_in_down"
+            app:popUpTo="@id/authenticationFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/toolkit_slide_in"
+            app:exitAnim="@anim/toolkit_slide_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/toolkit_slide_pop_out"
+            app:popExitAnim="@anim/toolkit_slide_pop_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.eihror.mesatestigor.presentation.auth.SignUpFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/toolkit_slide_in"
+            app:exitAnim="@anim/toolkit_slide_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/toolkit_slide_pop_out"
+            app:popExitAnim="@anim/toolkit_slide_pop_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.eihror.mesatestigor.presentation.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_authenticationFragment"
+            app:destination="@id/authenticationFragment"
+            app:enterAnim="@anim/toolkit_slide_in"
+            app:exitAnim="@anim/toolkit_slide_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/toolkit_slide_pop_out"
+            app:popExitAnim="@anim/toolkit_slide_pop_in"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/toolkit_slide_in"
+            app:exitAnim="@anim/toolkit_slide_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/toolkit_slide_pop_out"
+            app:popExitAnim="@anim/toolkit_slide_pop_in"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.eihror.mesatestigor.presentation.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_newsFragment"
+            app:destination="@id/newsFragment"
+            app:enterAnim="@anim/toolkit_slide_in_down"
+            app:exitAnim="@anim/toolkit_slide_out_down"
+            app:popEnterAnim="@anim/toolkit_slide_pop_out_down"
+            app:popExitAnim="@anim/toolkit_slide_pop_in_down" />
+        <action
+            android:id="@+id/action_homeFragment_to_filterFragment"
+            app:destination="@id/filterFragment"
+            app:enterAnim="@anim/toolkit_slide_in"
+            app:exitAnim="@anim/toolkit_slide_out"
+            app:popEnterAnim="@anim/toolkit_slide_pop_out"
+            app:popExitAnim="@anim/toolkit_slide_pop_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.eihror.mesatestigor.presentation.home.NewsFragment"
+        android:label="fragment_new"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.eihror.mesatestigor.presentation.home.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" />
+</navigation>

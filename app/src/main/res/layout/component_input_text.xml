@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".presentation.widget.CustomInputText">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Text.Medium.12sp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/full_names" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_value"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/toolkit_dimen48"
+        android:layout_marginTop="@dimen/toolkit_dimen2"
+        android:inputType="text"
+        android:background="@drawable/bg_rounded_6_gray_fill"
+        android:paddingStart="@dimen/toolkit_dimen8"
+        android:paddingEnd="@dimen/toolkit_dimen8"
+        android:textAppearance="@style/Text.Regular.16sp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_label"
+        tools:text="@tools:sample/full_names" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

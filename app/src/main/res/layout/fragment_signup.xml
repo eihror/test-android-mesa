@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".presentation.auth.SignUpFragment">
+
+    <com.eihror.mesatestigor.presentation.widget.Toolbar
+        android:id="@+id/toolbar_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_sign_up">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolkit_dimen24" />
+
+        <com.eihror.mesatestigor.presentation.widget.CustomInputText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/toolkit_dimen16"
+            android:layout_marginEnd="@dimen/toolkit_dimen16" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolkit_dimen26" />
+
+        <com.eihror.mesatestigor.presentation.widget.CustomInputText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/toolkit_dimen16"
+            android:layout_marginEnd="@dimen/toolkit_dimen16" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolkit_dimen26" />
+
+        <com.eihror.mesatestigor.presentation.widget.CustomInputText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/toolkit_dimen16"
+            android:layout_marginEnd="@dimen/toolkit_dimen16" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolkit_dimen26" />
+
+        <com.eihror.mesatestigor.presentation.widget.CustomInputText
+            android:id="@+id/input_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/toolkit_dimen16"
+            android:layout_marginEnd="@dimen/toolkit_dimen16" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolkit_dimen26" />
+
+        <com.eihror.mesatestigor.presentation.widget.CustomInputText
+            android:id="@+id/input_birth_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/toolkit_dimen16"
+            android:layout_marginEnd="@dimen/toolkit_dimen16" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolkit_dimen32" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_create"
+            style="@style/Button.Fill.ColorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/toolkit_dimen16"
+            android:layout_marginEnd="@dimen/toolkit_dimen16"
+            android:text="Cadastrar"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

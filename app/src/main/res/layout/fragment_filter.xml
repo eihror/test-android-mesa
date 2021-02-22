@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".presentation.home.FilterFragment">
+
+    <com.eihror.mesatestigor.presentation.widget.ToolbarFilter
+        android:id="@+id/toolbar_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_date_filter"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/toolkit_dimen44"
+            android:layout_marginStart="@dimen/toolkit_dimen16"
+            android:layout_marginTop="@dimen/toolkit_dimen24"
+            android:gravity="center_vertical"
+            android:text="Data"
+            android:textAppearance="@style/Text.Medium.18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@+id/button_date_filter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/button_date_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolkit_dimen44"
+            android:layout_marginTop="@dimen/toolkit_dimen24"
+            android:layout_marginEnd="@dimen/toolkit_dimen16"
+            android:drawableEnd="@drawable/ic_right"
+            android:drawablePadding="@dimen/toolkit_dimen28"
+            android:gravity="center"
+            android:text="Todas"
+            android:textAppearance="@style/Text.Italic.18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/toolkit_dimen16"
+            android:background="@color/gray_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_date_filter" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_just_favorite"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/toolkit_dimen44"
+            android:layout_marginStart="@dimen/toolkit_dimen16"
+            android:gravity="center_vertical"
+            android:text="Apenas favoritos"
+            android:textAppearance="@style/Text.Medium.18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@+id/checkbox_just_favorite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_date_filter" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkbox_just_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/toolkit_dimen16"
+            android:background="@drawable/selector_favorite"
+            android:button="@null"
+            android:checked="true"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_just_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_view_just_favorite" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/toolkit_dimen16"
+            android:background="@color/gray_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_just_favorite" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
